@@ -1,36 +1,44 @@
-import Sidebar from '@/components/sidebar'
-import './globals.css'
-import clsx from 'clsx'
-import { Providers } from './providers'
-import { Plus_Jakarta_Sans } from 'next/font/google'
-import { Metadata } from 'next'
+import Sidebar from "@/components/sidebar";
+import "./globals.css";
+import clsx from "clsx";
+import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/react";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import { Metadata } from "next";
 
 const jakarta = Plus_Jakarta_Sans({
-	weight: ['400', '700'],
-	subsets: ['latin'],
-})
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-	title: 'Muhammad Yafi Alhakim',
-	description: "Muhammad Yafi's personal website",
-}
+  title: "Muhammad Yafi Alhakim",
+  description: "Muhammad Yafi's personal website",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-	return (
-		<>
-			<html lang='en' suppressHydrationWarning>
-				<body>
-					<div
-						className={clsx(
-							'mx-4 mb-40 mt-8 flex max-w-4xl flex-col antialiased md:flex-row lg:mx-auto lg:mt-[100px] lg:w-[1000px]',
-							jakarta.className
-						)}
-					>
-						<Sidebar className='z-50' />
-						<main>{children}</main>
-					</div>
-				</body>
-			</html>
-		</>
-	)
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <body>
+          <div
+            className={clsx(
+              "mx-4 mb-40 mt-8 flex max-w-4xl flex-col antialiased md:flex-row lg:mx-auto lg:mt-[100px] lg:w-[1000px]",
+              jakarta.className
+            )}
+          >
+            <Sidebar className="z-50" />
+            <main>
+              {children}
+              <Analytics />
+            </main>
+          </div>
+        </body>
+      </html>
+    </>
+  );
 }
