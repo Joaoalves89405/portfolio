@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						jakarta.className
 					)}>
 					<Providers>
-						<main className="flex w-full">
+						<main className="flex flex-col w-full  md:flex-row">
 							<Sidebar />
 							{children}
 							<Analytics />
