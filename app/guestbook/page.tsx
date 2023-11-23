@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<div>
-			<h1 className='text-[48px] font-bold'>Guest Book</h1>
-			<div className='mt-8 flex flex-col gap-8'>
+			<h1 className="text-[48px] font-bold">Guest Book</h1>
+			<div className="mt-8 flex flex-col gap-8">
 				{[0, 1, 2, 3, 4, 5].map(item => (
 					<GuestMessage key={item} />
 				))}
