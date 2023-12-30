@@ -12,78 +12,37 @@ const page = () => {
 				Here are some of my projects. I&apos;m currently working on a few projects that I can&apos;t wait to share with
 				you.
 			</p>
-			<div className="mt-5 grid grid-cols-2 gap-4">
-				{/* {[0, 1, 2, 3, 4, 5].map((item) => (
-          <BlogContent key={item} />
-        ))} */}
+			<div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
 				<Projects
-					title={'Chill Out'}
-					desc={'Chill Out is a web makes you study with relax.'}
-					image={'/img/chill.png'}
-					href="https://chill-out.vercel.app/"
-					stack={
-						<Badge
-							// techstack="NextJS"
-							logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
-						/>
-					}
+					title={'TurGranada'}
+					desc={'Turism portal for the city of Granada.'}
+					image={'/img/turgranada.jpg'}
+					href="https://qa-turgranada.vercel.app/es"
 				/>
 				<Projects
-					title={'Anonymous Message'}
-					desc={'Send anonymous message to you.'}
-					image={'/img/anonym.png'}
-					href="https://anonymous-website-message.vercel.app/"
-					stack={
-						<Badge
-							// techstack="NextJS"
-							logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
-							logo2={<IconSupabase width="16px" height="16px" className="mr-1" />}
-						/>
-					}
+					title={'Granada Interactive Map'}
+					desc={'Interactive map for the city of Granada.'}
+					image={'/img/granadaMap.jpg'}
+					href="https://qa-mapa-granada.netlify.app/"
 				/>
 				<Projects
-					title={'Movies'}
-					desc={'Simple movies web using NextJS'}
-					image={'/img/movies.png'}
-					href="https://movies-13.vercel.app/"
-					stack={
-						<Badge
-							// techstack="NextJS"
-							logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
-						/>
-					}
+					title={'Urban Platform'}
+					desc={'Platform to manage city events.'}
+					image={'/img/urbanPlatform.png'}
+					href="https://urbanplatform.city/"
 				/>
 				<BlogContent
-					title={'Simple E-commerce'}
-					desc={'Simple e-commerce using NextJS and RSC'}
-					image={'/img/ecommerce.png'}
-					href="https://simple-ecommerce-appdir.vercel.app/"
+					title={'WOSUP'}
+					desc={'Application to remove garbage from the ocean.'}
+					image={'/img/wosup.jpg'}
+					href="https://wosup.eu/"
 				/>
-				<BlogContent
+				{/* 				<BlogContent
 					title={'Pokeredux'}
 					desc={'Data fetching with redux toolkit.'}
 					image={'/img/pokredux.png'}
-					href="https://pokredux.vercel.app/"
-				/>
-				<BlogContent
-					title={'Todo List'}
-					desc={'This is a todo list that I made using Supabase.'}
-					href="https://todo-supabasev2.vercel.app/"
-					image={'/img/todos.png'}
-				/>
-
-				<BlogContent
-					title={'Blog Design'}
-					desc={'Practicing slicing a design using Tailwind CSS.'}
-					href="https://slicing-next1.vercel.app/"
-					image={'/img/slicing1.png'}
-				/>
-				<BlogContent
-					title={'CodeDesign'}
-					desc={'Slicing from design to web from codedesign.dev.'}
-					href="https://slicing-all.vercel.app/"
-					image={'/img/codesign.png'}
-				/>
+					href="https://5gaas.eu/"
+				/> */}
 			</div>
 		</div>
 	)

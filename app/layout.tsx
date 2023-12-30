@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import { Metadata } from 'next'
+import Metadata from 'next'
 
 const jakarta = Plus_Jakarta_Sans({
 	weight: ['400', '700'],

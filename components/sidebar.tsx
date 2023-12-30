@@ -33,12 +33,6 @@ const Items = {
 		y: 69 + 34,
 		w: '90px',
 	},
-	'/blog': {
-		name: 'blog',
-		x: 217 + 100,
-		y: 101 + 34,
-		w: '60px',
-	},
 }
 
 export default function Sidebar() {

@@ -43,13 +43,3 @@ export async function getGithubUserData() {
 
 	return userDataWithReposAndStars
 }
-
-export async function getLeetcode() {
-	const leet = await fetch('https://leetcode-stats-api.herokuapp.com/yaffalhakim1')
-
-	if (!leet.ok) {
-		throw new Error('Failed to fetch leetcode data')
-	}
-
-	return leet.json()
-}

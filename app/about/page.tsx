@@ -21,9 +21,9 @@ const page = () => {
 				I'm Joao, a <span className="font-bold">MSc Software Engineering</span>
 			</p>
 			<p className="text-justify md:w-9/12">
-				I have two years of front-end development experience, specialising in React and related libraries. I have a
-				track record of creating user friendly, high performance interfaces and keeping up with industry trends.
-				industry trends.
+				I have two years of frontend development experience, specialising in React and related libraries. I have a track
+				record of creating user friendly, high performance interfaces and keeping up with industry trends. industry
+				trends.
 			</p>
 			<div className="my-4 border md:w-9/12" />
 			<p className="text-justify md:w-9/12">
@@ -44,11 +44,8 @@ const page = () => {
 			<div className="flex space-x-2">
 				<IconNextjs width="24px" height="24px" />
 				<IconReactjs width="24px" height="24px" />
-				<IconFlutter width="24px" height="24px" />
-				<IconSupabase width="24px" height="24px" />
 				<IconTailwind width="24px" height="24px" />
 				<IconTypescript width="24px" height="24px" />
-				<IconDart width="24px" height="24px" />
 			</div>
 
 			<div className="flex flex-col gap-2 md:flex-row md:gap-2">
