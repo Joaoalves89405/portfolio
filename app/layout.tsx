@@ -4,14 +4,14 @@ import clsx from 'clsx'
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import Metadata from 'next'
+import { Metadata } from 'next'
 
 const jakarta = Plus_Jakarta_Sans({
 	weight: ['400', '700'],
 	subsets: ['latin'],
 })
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: 'Joao Miguel Cerca Alves',
 	description: "Joao Alves's personal website",
 }
