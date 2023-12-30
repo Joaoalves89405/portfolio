@@ -12,7 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-	title: 'Joao Miguel Cerca Alves',
+	title: 'Joao Alves',
 	description: "Joao Alves's personal website",
 }
 
